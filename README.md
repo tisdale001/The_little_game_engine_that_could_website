@@ -17,6 +17,7 @@ This website will be the first place I look to grab your project files and binar
 
 -----
 
-## Click this link for project website
-<br>
-[little_game_engine_that_could.html](./little_game_engine_that_could.html)
+### Click the link below for project website
+
+[little_game_engine_that_could.html](/little_game_engine_that_could.html)
+
