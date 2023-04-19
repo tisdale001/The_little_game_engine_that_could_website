@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['receive_213',['receive',['../classSprite.html#a4d0a0c776c4cd240c0f7a0970d23f7b0',1,'Sprite']]],
-  ['rectanglecomponent_214',['RectangleComponent',['../classRectangleComponent.html#ac674880c4b0f88affe80d8b69601c624',1,'RectangleComponent']]],
-  ['removeresource_215',['RemoveResource',['../classSurfaceResourceManager.html#a21d6554e0c4aecce4949a513737511b8',1,'SurfaceResourceManager::RemoveResource()'],['../classTextureResourceManager.html#a41799fce45ce407ef0f1e4ae463900d6',1,'TextureResourceManager::RemoveResource()']]],
-  ['removespritefrommanager_216',['removeSpriteFromManager',['../classSprite.html#a0ec419f0f8ad92bc2022c775c59055c6',1,'Sprite']]],
-  ['render_217',['render',['../classSprite.html#a1114c639467b7cfc8368619794d7c35f',1,'Sprite']]],
-  ['render_218',['Render',['../classSDLGraphicsProgram.html#afb653f6f329cb7ddfbb5332a5ea1bbda',1,'SDLGraphicsProgram::Render()'],['../classGameObject.html#a2064fc3b9c544fd1476e82b5e2693180',1,'GameObject::Render()'],['../classRectangleComponent.html#a372d4f7a40615cfea0f3ecb09b394a3d',1,'RectangleComponent::Render()'],['../classTileMapComponent.html#a499b5deb3ae911b848b995244bf5ec8f',1,'TileMapComponent::Render()']]]
+  ['pausemusic_206',['PauseMusic',['../classMusic.html#a0b2f0aca2cef03b1e7cd49da32e02ec0',1,'Music']]],
+  ['physicscomponent_207',['PhysicsComponent',['../classPhysicsComponent.html#aeb544a2a04cde8f050c6a51ec436ec4e',1,'PhysicsComponent']]],
+  ['playmusic_208',['PlayMusic',['../classMusic.html#a63f07af5f02b5925c8ecfc6f63c0830c',1,'Music']]],
+  ['playsound_209',['PlaySound',['../classSound.html#a7f9c91aa25f50fb3276e7d4b4af5cac1',1,'Sound']]],
+  ['printtiles_210',['PrintTiles',['../classTileMapComponent.html#aaf36f19d3a127c6ac68eb612fe430735',1,'TileMapComponent']]]
 ];

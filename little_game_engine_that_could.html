@@ -13,8 +13,11 @@
 
     <div style="border:blue; border-style:dotted; margin-top: 20px;">
         <h1 style="margin-left: 10px;">Screenshots</h1>
-        <img src="./images/game_engines.jpeg" height="300px" style="margin-left:10px"/>
-        <img src="./images/TopGameEngines.png" height="300px" style="margin-left:10px"/>
+        <img src="./images/game1.png" height="300px" style="margin-left:10px; margin-top: 10px;"/>
+        <img src="./images/game2.png" height="300px" style="margin-left:10px; margin-top: 10px;"/>
+        <img src="./images/editor.png" height="300px" style="margin-left:10px; margin-top: 10px;"/>
+        <img src="./images/SpritePreviewer.png" height="300px" style="margin-left:10px; margin-top: 10px;"/>
+        <img src="./images/replay.png" height="300px" style="margin-left:10px; margin-top: 10px;"/>
     </div>
 
     <div style="border:green; border-style:dotted; margin-top: 20px;">
@@ -29,14 +32,50 @@
 
     <div style="border:yellow; border-style:dotted; margin-top: 20px;">
         <h1 style="margin-left: 10px;">Engine Architecture</h1>
+        <img src="./images/EngineArchitecture.png" height="600px" style="margin-left:10px; margin-bottom:10px;"/>
     </div>
 
     <div style="border:orange; border-style:dotted; margin-top: 20px;">
-        <h1 style="margin-left: 10px;">Link to binary file</h1>
-        <div style="margin-bottom:10px">
-            <a href="https://github.com/Spring23BuildingGameEngines/finalproject-the-little-game-engine-that-could/tree/temp-master"
+        <h1 style="margin-left: 10px;">Binary file and compile instructions</h1>
+        <div style="margin-top: 10px; margin-left: 10px">
+            <p>To run binary file</p>
+            <pre>
+                <code>
+                    $ cd finalproject-the-little-game-engine-that-could/Engine
+                    $ ./dist/gravity_guy
+                    $ ./dist/gravity_guy_PCG
+                    $ ./dist/PlatformerReplayDemo
+                </code>
+            </pre>
+            <p>To compile on Linux</p>
+            <pre>
+                <code>
+                    $ sudo apt-get install libsdl2-dev
+                    $ sudo apt-get update
+                    $ sudo apt-get install libsdl2-mixer-dev
+                    $ sudo apt-get install libsdl2-image-dev
+                    $ sudo apt install python3-tk
+                </code>
+                <code>
+                    $ cd finalproject-the-little-game-engine-that-could/Engine 
+                    $ python3 linuxbuild.py
+                </code>
+                <code>
+                    $ python3 gravity_guy.py
+                    $ python3 gravity_guy_PCG.py
+                    $ python3 PlatformerReplayDemo.py
+                </code>
+            </pre>
+        </div>
+        <div style="margin-bottom:10px; margin-top: 10px;">
+            <div style="margin-left: 10px">
+                <p>
+                    Link to binary file (gravity_guy):
+                </p>
+            </div>
+            <a href="https://github.com/Spring23BuildingGameEngines/finalproject-the-little-game-engine-that-could/tree/master/Engine/dist"
                 style="margin-left: 10px; ">
-                https://github.com/Spring23BuildingGameEngines/finalproject-the-little-game-engine-that-could/tree/temp-master
+                https://github.com/Spring23BuildingGameEngines/finalproject-the-little-game-engine-that-could/tree/lucian-branch/Engine/dist
             </a>
         </div>
     </div>

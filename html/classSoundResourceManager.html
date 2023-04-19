@@ -76,13 +76,12 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundResourceManager.html#a505f04a3c44f8133de1712d83338937a">shutDown</a> ()</td></tr>
 <tr class="memdesc:a505f04a3c44f8133de1712d83338937a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory management. <br /></td></tr>
 <tr class="separator:a505f04a3c44f8133de1712d83338937a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cce1ac628351ab431a2a45c568ece2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundResourceManager.html#a3cce1ac628351ab431a2a45c568ece2e">LoadResource</a> (char *fileName)</td></tr>
-<tr class="memdesc:a3cce1ac628351ab431a2a45c568ece2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads resource, param fileName, only once.  <a href="classSoundResourceManager.html#a3cce1ac628351ab431a2a45c568ece2e">More...</a><br /></td></tr>
-<tr class="separator:a3cce1ac628351ab431a2a45c568ece2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ecc9347cefc1057d1a902734499084c"><td class="memItemLeft" align="right" valign="top"><a id="a5ecc9347cefc1057d1a902734499084c"></a>
-Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundResourceManager.html#a5ecc9347cefc1057d1a902734499084c">GetResource</a> (char *fileName)</td></tr>
-<tr class="memdesc:a5ecc9347cefc1057d1a902734499084c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter: returns mSound. <br /></td></tr>
-<tr class="separator:a5ecc9347cefc1057d1a902734499084c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32804529df02a767ee72b459f1b4aee3"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundResourceManager.html#a32804529df02a767ee72b459f1b4aee3">LoadSoundResource</a> (char *fileName)</td></tr>
+<tr class="memdesc:a32804529df02a767ee72b459f1b4aee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads sound resource only once, returns resource.  <a href="classSoundResourceManager.html#a32804529df02a767ee72b459f1b4aee3">More...</a><br /></td></tr>
+<tr class="separator:a32804529df02a767ee72b459f1b4aee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc451868b7f6b2171ed8d7928c2bd563"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSoundResourceManager.html#acc451868b7f6b2171ed8d7928c2bd563">LoadMusicResource</a> (char *fileName)</td></tr>
+<tr class="memdesc:acc451868b7f6b2171ed8d7928c2bd563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads music resource only once, returns resource.  <a href="classSoundResourceManager.html#acc451868b7f6b2171ed8d7928c2bd563">More...</a><br /></td></tr>
+<tr class="separator:acc451868b7f6b2171ed8d7928c2bd563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -92,14 +91,14 @@ static <a class="el" href="classSoundResourceManager.html">SoundResourceManager<
 <tr class="separator:acf5fd444ef13514766a662b2f7e4f1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3cce1ac628351ab431a2a45c568ece2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cce1ac628351ab431a2a45c568ece2e">&#9670;&nbsp;</a></span>LoadResource()</h2>
+<a id="acc451868b7f6b2171ed8d7928c2bd563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc451868b7f6b2171ed8d7928c2bd563">&#9670;&nbsp;</a></span>LoadMusicResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SoundResourceManager::LoadResource </td>
+          <td class="memname">Mix_Music * SoundResourceManager::LoadMusicResource </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>fileName</em></td><td>)</td>
@@ -108,8 +107,29 @@ static <a class="el" href="classSoundResourceManager.html">SoundResourceManager<
       </table>
 </div><div class="memdoc">
 
-<p>Loads resource, param fileName, only once. </p>
-<p>Loads resource only once. Error messages if load fails. Gives message if resource already exists. </p>
+<p>Loads music resource only once, returns resource. </p>
+<p>Loads resource only once. Error messages if load fails. Returns loaded resource or the resource if it already exists. </p>
+
+</div>
+</div>
+<a id="a32804529df02a767ee72b459f1b4aee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32804529df02a767ee72b459f1b4aee3">&#9670;&nbsp;</a></span>LoadSoundResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk * SoundResourceManager::LoadSoundResource </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads sound resource only once, returns resource. </p>
+<p>Loads resource only once. Error messages if load fails. Returns loaded resource or the resource if it already exists. </p>
 
 </div>
 </div>

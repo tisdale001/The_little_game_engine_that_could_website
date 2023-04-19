@@ -80,6 +80,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d8289074c6943aee6194df04a28cd5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileMapComponent.html#a3d8289074c6943aee6194df04a28cd5b">~TileMapComponent</a> ()</td></tr>
 <tr class="memdesc:a3d8289074c6943aee6194df04a28cd5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deconstructor.  <a href="classTileMapComponent.html#a3d8289074c6943aee6194df04a28cd5b">More...</a><br /></td></tr>
 <tr class="separator:a3d8289074c6943aee6194df04a28cd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba410028aff796816480b85ab88e858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileMapComponent.html#aeba410028aff796816480b85ab88e858">ExtendTilemap</a> (const std::string &amp;levelPath)</td></tr>
+<tr class="memdesc:aeba410028aff796816480b85ab88e858"><td class="mdescLeft">&#160;</td><td class="mdescRight">extends the tilemap given a level  <a href="classTileMapComponent.html#aeba410028aff796816480b85ab88e858">More...</a><br /></td></tr>
+<tr class="separator:aeba410028aff796816480b85ab88e858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a499b5deb3ae911b848b995244bf5ec8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTileMapComponent.html#a499b5deb3ae911b848b995244bf5ec8f">Render</a> (std::uintptr_t rendererAddress, int offsetX, int offsetY)</td></tr>
 <tr class="memdesc:a499b5deb3ae911b848b995244bf5ec8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders all tiles according to camera offset.  <a href="classTileMapComponent.html#a499b5deb3ae911b848b995244bf5ec8f">More...</a><br /></td></tr>
 <tr class="separator:a499b5deb3ae911b848b995244bf5ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,6 +237,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Checks for collisions around <a class="el" href="classGameObject.html">GameObject</a>. Returns collision object. </p>
 <p>Gets tiles on object's left, right, top, and bottom edges. Iterate from left to right and top to bottom of tiles covered to check for collisions. Returns a <a class="el" href="structCollision.html">Collision</a> object. </p>
+
+</div>
+</div>
+<a id="aeba410028aff796816480b85ab88e858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba410028aff796816480b85ab88e858">&#9670;&nbsp;</a></span>ExtendTilemap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TileMapComponent::ExtendTilemap </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>levelPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>extends the tilemap given a level </p>
+<p>extends the current tilemap given a level's file path, must be same height. </p>
 
 </div>
 </div>

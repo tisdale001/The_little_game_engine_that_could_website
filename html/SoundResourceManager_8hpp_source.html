@@ -89,27 +89,25 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSoundResourceManager.html#a505f04a3c44f8133de1712d83338937a">shutDown</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">// TODO: Refactor to be a static function</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSoundResourceManager.html#a3cce1ac628351ab431a2a45c568ece2e">LoadResource</a>(<span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">// TODO: Refactor to be a static function</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        Mix_Chunk* <a class="code" href="classSoundResourceManager.html#a5ecc9347cefc1057d1a902734499084c">GetResource</a>(<span class="keywordtype">char</span>* fileName);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// Private constructor</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classSoundResourceManager.html">SoundResourceManager</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::unordered_map&lt;char*, Mix_Chunk*&gt; mSoundMap;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        Mix_Chunk* mSound;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Mix_Chunk* <a class="code" href="classSoundResourceManager.html#a32804529df02a767ee72b459f1b4aee3">LoadSoundResource</a>(<span class="keywordtype">char</span>* fileName);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        Mix_Music* <a class="code" href="classSoundResourceManager.html#acc451868b7f6b2171ed8d7928c2bd563">LoadMusicResource</a>(<span class="keywordtype">char</span>* fileName);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// Private constructor</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classSoundResourceManager.html">SoundResourceManager</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::unordered_map&lt;char*, Mix_Chunk*&gt; mSoundMap;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::unordered_map&lt;char*, Mix_Music*&gt; mMusicMap;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassSoundResourceManager_html"><div class="ttname"><a href="classSoundResourceManager.html">SoundResourceManager</a></div><div class="ttdef"><b>Definition:</b> SoundResourceManager.hpp:14</div></div>
-<div class="ttc" id="aclassSoundResourceManager_html_a3cce1ac628351ab431a2a45c568ece2e"><div class="ttname"><a href="classSoundResourceManager.html#a3cce1ac628351ab431a2a45c568ece2e">SoundResourceManager::LoadResource</a></div><div class="ttdeci">void LoadResource(char *fileName)</div><div class="ttdoc">Loads resource, param fileName, only once.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:41</div></div>
-<div class="ttc" id="aclassSoundResourceManager_html_a505f04a3c44f8133de1712d83338937a"><div class="ttname"><a href="classSoundResourceManager.html#a505f04a3c44f8133de1712d83338937a">SoundResourceManager::shutDown</a></div><div class="ttdeci">void shutDown()</div><div class="ttdoc">Memory management.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:17</div></div>
-<div class="ttc" id="aclassSoundResourceManager_html_a5ecc9347cefc1057d1a902734499084c"><div class="ttname"><a href="classSoundResourceManager.html#a5ecc9347cefc1057d1a902734499084c">SoundResourceManager::GetResource</a></div><div class="ttdeci">Mix_Chunk * GetResource(char *fileName)</div><div class="ttdoc">Getter: returns mSound.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:67</div></div>
-<div class="ttc" id="aclassSoundResourceManager_html_acf5fd444ef13514766a662b2f7e4f1ff"><div class="ttname"><a href="classSoundResourceManager.html#acf5fd444ef13514766a662b2f7e4f1ff">SoundResourceManager::instance</a></div><div class="ttdeci">static SoundResourceManager &amp; instance()</div><div class="ttdoc">Returns instance of SoundResourceManager: Singleton pattern.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:8</div></div>
+<div class="ttc" id="aclassSoundResourceManager_html_a32804529df02a767ee72b459f1b4aee3"><div class="ttname"><a href="classSoundResourceManager.html#a32804529df02a767ee72b459f1b4aee3">SoundResourceManager::LoadSoundResource</a></div><div class="ttdeci">Mix_Chunk * LoadSoundResource(char *fileName)</div><div class="ttdoc">Loads sound resource only once, returns resource.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:45</div></div>
+<div class="ttc" id="aclassSoundResourceManager_html_a505f04a3c44f8133de1712d83338937a"><div class="ttname"><a href="classSoundResourceManager.html#a505f04a3c44f8133de1712d83338937a">SoundResourceManager::shutDown</a></div><div class="ttdeci">void shutDown()</div><div class="ttdoc">Memory management.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:18</div></div>
+<div class="ttc" id="aclassSoundResourceManager_html_acc451868b7f6b2171ed8d7928c2bd563"><div class="ttname"><a href="classSoundResourceManager.html#acc451868b7f6b2171ed8d7928c2bd563">SoundResourceManager::LoadMusicResource</a></div><div class="ttdeci">Mix_Music * LoadMusicResource(char *fileName)</div><div class="ttdoc">Loads music resource only once, returns resource.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:71</div></div>
+<div class="ttc" id="aclassSoundResourceManager_html_acf5fd444ef13514766a662b2f7e4f1ff"><div class="ttname"><a href="classSoundResourceManager.html#acf5fd444ef13514766a662b2f7e4f1ff">SoundResourceManager::instance</a></div><div class="ttdeci">static SoundResourceManager &amp; instance()</div><div class="ttdoc">Returns instance of SoundResourceManager: Singleton pattern.</div><div class="ttdef"><b>Definition:</b> SoundResourceManager.cpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
